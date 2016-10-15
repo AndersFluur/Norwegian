@@ -123,15 +123,16 @@ class NorwegianReqest():
         return trip_list_sorted_by_price
 
 
-if __name__ == "__main__":
+def main():
+
     import argparse
 
     parser = argparse.ArgumentParser(description='''Read flights and prices from Norwegians web and
-                                     present a list of trips and prices''')
+                                         present a list of trips and prices''')
     parser.add_argument('--origin', '-a', type=str, required=True,
                     help='The airport to travel from')
     parser.add_argument('--destination', '-z', required=True,
-                        help='The airport to travel to')
+                    help='The airport to travel to')
     parser.add_argument('--duration','-u', type=int, dest='duration', required=True,
                     help='Wanted duration of the trip')
     parser.add_argument('--months-ahead','-m', type=int,  dest='months_ahead', required=True,
@@ -143,3 +144,6 @@ if __name__ == "__main__":
     trip_list = N.get_trip_price_list( args.origin, args.destination, args.duration, args.months_ahead)
     for trip in trip_list:
         print('Leaving: {} Returning: {} Price: {} Duration: {}'.format(trip[0].isoformat(), trip[2].isoformat(), trip[5], trip[4]))
+
+if __name__ == "__main__":
+    main()

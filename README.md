@@ -1,14 +1,31 @@
-n=NorwegianReqest()
-n.getPriceList(D_City='GOT', A_City='ALC', D_Day=01, D_Month='201702',  R_Day='01', R_Month='201702')
+Installation
+============
+Download package from Githup
 
+cd Norwegian
 
+python setup.py sdist
+pip install --user dist/norwegian-1.0.tar.gz
+/home/$USER/.local/bin/norwegian
 
-fareCalendarTable
-week
-fareCalDate
-fareCalPrice
+Running
+=======
+python src/norwegian.py -h
 
+Usage: norwegian.py [-h] --origin ORIGIN --destination DESTINATION --duration
+                    DURATION --months-ahead MONTHS_AHEAD
 
+Read flights and prices from Norwegians web and present a list of trips and
+prices
 
-n.getPriceList(D_City='GOT', A_City='ALC', D_Day=01, D_Month='201702',  R_Day=01, R_Month='201702')
-	 #argReq+='{}='{}.format(arg.
+optional arguments:
+  -h, --help            show this help message and exit
+  --origin ORIGIN, -a ORIGIN
+                        The airport to travel from
+  --destination DESTINATION, -z DESTINATION
+                        The airport to travel to
+  --duration DURATION, -u DURATION
+                        Wanted duration of the trip
+  --months-ahead MONTHS_AHEAD, -m MONTHS_AHEAD
+                        Number of months in the future to fetch flights for
+
