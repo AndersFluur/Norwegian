@@ -4,16 +4,21 @@ Introduction
 Norwegian is software that reads flights and prices from the Airline Norwegians web site.
 By enterring origin and destination and the duration of the trip, a sorted list of trips with round trip prices is printed.
 
-Origin and destination is enterred as an [IATA three letter code](http://www.iata.org/publications/Pages/code-search.aspx)
+Origin and destination is enterred as an [IATA three letter city code](http://www.iata.org/publications/Pages/code-search.aspx)
 
 
 Installation
 ============
-Download package from Githup
-tar xvf  Norwegian.tar.gz
-cd Norwegian
+Download package from Githup:
+
+wget https://github.com/AndersFluur/Norwegian/archive/master.zip
+
+unzip  Norwegian-master.zip
+
+cd Norwegian-master
 
 python setup.py sdist
+
 pip install --user dist/norwegian-1.0.1.tar.gz
 
 Running
