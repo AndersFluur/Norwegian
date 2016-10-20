@@ -5,17 +5,12 @@ from setuptools import setup
 setup(
     name='norwegian',
     packages = ['norwegian'],
-    version = '1.0',
+    version = '1.0.1',
     description = 'Read and present flights from the Norwegian web site',
     author = 'Anders Fluur',
     author_email = 'anders@fluurnet',
     url = 'https://github.com/AndersFluur/Norwegian',
-<<<<<<< HEAD
-    #packages = ['beautifulsoup', 'bs4', 'requests'],
-    download_url = 'https://github.com/AndersFluur/Norwegian/tarball/0.1', 
-=======
-    download_url = 'https://github.com/AndersFluur/Norwegian/tarball/1.0', 
->>>>>>> Made working python package with license entry-points, etc
+    download_url = 'https://github.com/AndersFluur/Norwegian/tarball/1.0.1', 
     keywords = ['airlines', 'travel'],
     classifiers = [],
 
@@ -25,10 +20,6 @@ setup(
 
     install_requires=[
            'bs4',
-<<<<<<< HEAD
-#           'beautifulsoap4',
-=======
->>>>>>> Made working python package with license entry-points, etc
            'requests'
     ],
 

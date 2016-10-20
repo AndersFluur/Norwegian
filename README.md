@@ -1,3 +1,12 @@
+Introduction
+============
+
+Norwegian is software that reads flights and prices from the Airline Norwegians web site.
+By enterring origin and destination and the duration of the trip, a sorted list of trips with round trip prices is printed.
+
+Origin and destination is enterred as an [IATA three letter code]: http://www.iata.org/publications/Pages/code-search.aspx
+
+
 Installation
 ============
 Download package from Githup
@@ -10,7 +19,9 @@ pip install --user dist/norwegian-1.0.tar.gz
 
 Running
 =======
-python src/norwegian.py -h
+
+```
+norwegian -h
 
 Usage: norwegian.py [-h] --origin ORIGIN --destination DESTINATION --duration
                     DURATION --months-ahead MONTHS_AHEAD
@@ -28,4 +39,4 @@ optional arguments:
                         Wanted duration of the trip
   --months-ahead MONTHS_AHEAD, -m MONTHS_AHEAD
                         Number of months in the future to fetch flights for
-
+```
