@@ -21,6 +21,8 @@ python setup.py sdist
 
 pip install --user dist/norwegian-1.0.1.tar.gz
 
+The program is now installed in: /home/$USER/.local/bin
+
 Running
 =======
 
