@@ -2,9 +2,9 @@ Introduction
 ============
 
 Norwegian is software that reads flights and prices from the Airline Norwegians web site.
-By enterring origin and destination and the duration of the trip, a sorted list of trips with round trip prices is printed.
+By entering origin and destination and the duration of the trip, a sorted list of trips with round trip prices is printed.
 
-Origin and destination is enterred as an [IATA three letter city code](http://www.iata.org/publications/Pages/code-search.aspx)
+Origin and destination is entered as an [IATA three letter city code](http://www.iata.org/publications/Pages/code-search.aspx)
 
 
 Installation
