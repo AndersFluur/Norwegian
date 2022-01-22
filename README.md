@@ -13,7 +13,7 @@ Download package from Githup:
 
 wget https://github.com/AndersFluur/Norwegian/archive/master.zip
 
-unzip  Norwegian-master.zip
+unzip  master.zip
 
 cd Norwegian-master
 
